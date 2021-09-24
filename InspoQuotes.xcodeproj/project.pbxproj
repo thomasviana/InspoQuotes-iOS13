@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DB1070826FE5066009A3985 /* QuoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD18A84F21285D4800F6BF05 /* QuoteTableViewController.swift */; };
+		4DB1070B26FE523C009A3985 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB1070A26FE523C009A3985 /* StoreKit.framework */; };
 		AD18A83E21285CAF00F6BF05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD18A83D21285CAF00F6BF05 /* AppDelegate.swift */; };
 		AD18A84321285CAF00F6BF05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD18A84121285CAF00F6BF05 /* Main.storyboard */; };
 		AD18A84521285CB000F6BF05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD18A84421285CB000F6BF05 /* Assets.xcassets */; };
 		AD18A84821285CB000F6BF05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD18A84621285CB000F6BF05 /* LaunchScreen.storyboard */; };
-		AD18A85021285D4800F6BF05 /* QuoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD18A84F21285D4800F6BF05 /* QuoteTableViewController.swift */; };
 		AD18A8532128604C00F6BF05 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD18A8512128604B00F6BF05 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DB1070A26FE523C009A3985 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4DF486BA26FD85FA007E1F5D /* ContentInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ContentInfo.plist; sourceTree = "<group>"; };
 		AD18A83A21285CAF00F6BF05 /* InspoQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InspoQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD18A83D21285CAF00F6BF05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD18A84221285CAF00F6BF05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,18 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB1070B26FE523C009A3985 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DB1070926FE523C009A3985 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DB1070A26FE523C009A3985 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DF486B926FD85FA007E1F5D /* InspoQuotesTV */ = {
+			isa = PBXGroup;
+			children = (
+				4DF486BA26FD85FA007E1F5D /* ContentInfo.plist */,
+			);
+			path = InspoQuotesTV;
+			sourceTree = "<group>";
+		};
 		AD18A83121285CAF00F6BF05 = {
 			isa = PBXGroup;
 			children = (
 				AD18A8512128604B00F6BF05 /* README.md */,
 				AD18A83C21285CAF00F6BF05 /* InspoQuotes */,
+				4DF486B926FD85FA007E1F5D /* InspoQuotesTV */,
 				AD18A83B21285CAF00F6BF05 /* Products */,
+				4DB1070926FE523C009A3985 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,17 +84,9 @@
 				AD18A84121285CAF00F6BF05 /* Main.storyboard */,
 				AD18A84421285CB000F6BF05 /* Assets.xcassets */,
 				AD18A84621285CB000F6BF05 /* LaunchScreen.storyboard */,
-				AD18A8552128605C00F6BF05 /* Supporting Files */,
 				AD18A84921285CB000F6BF05 /* Info.plist */,
 			);
 			path = InspoQuotes;
-			sourceTree = "<group>";
-		};
-		AD18A8552128605C00F6BF05 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD18A85021285D4800F6BF05 /* QuoteTableViewController.swift in Sources */,
+				4DB1070826FE5066009A3985 /* QuoteTableViewController.swift in Sources */,
 				AD18A83E21285CAF00F6BF05 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,13 +310,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
+				DEVELOPMENT_TEAM = 6HS32GP5PD;
 				INFOPLIST_FILE = InspoQuotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.londonappbrewery.InspoQuotes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomasviana.InspoQuotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -314,13 +328,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
+				DEVELOPMENT_TEAM = 6HS32GP5PD;
 				INFOPLIST_FILE = InspoQuotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.londonappbrewery.InspoQuotes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomasviana.InspoQuotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
